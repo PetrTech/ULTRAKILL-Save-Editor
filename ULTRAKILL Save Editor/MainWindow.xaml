@@ -1,0 +1,173 @@
+﻿<mah:MetroWindow x:Class="ULTRAKILL_Save_Editor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ULTRAKILL_Save_Editor"
+        xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        mc:Ignorable="d"
+        Title="ULTRAKILL Save Editor" Height="562" Width="800" Closed="MetroWindow_Closed" Loaded="MetroWindow_Loaded">
+    <Grid>
+        <mah:MetroAnimatedSingleRowTabControl VerticalAlignment="Top" Height="511">
+            <TabItem Header="Global">
+                <Grid Background="#FF252525" Margin="0,0,0,-5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="0*"/>
+                    </Grid.RowDefinitions>
+                    <mah:NumericUpDown x:Name="pts" HorizontalAlignment="Left" Margin="57,10,0,0" VerticalAlignment="Top" Width="168" Value="0" Height="26"/>
+                    <Label Content="Points" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="26" Width="42"/>
+                    <Label Content="Intro Seen?" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Height="26" Width="70"/>
+                    <Label Content="Tutorial Beat?" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" Height="26" Width="82"/>
+                    <CheckBox x:Name="introSeen" HorizontalAlignment="Left" Margin="85,45,0,0" VerticalAlignment="Top" Height="18" Width="24"/>
+                    <CheckBox x:Name="tutorialBeat" HorizontalAlignment="Left" Margin="97,76,0,0" VerticalAlignment="Top" Height="18" Width="24"/>
+                    <Label Content="Clash Mode Unlocked?" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top" Height="26" Width="131"/>
+                    <CheckBox x:Name="clashModeUnlocked" HorizontalAlignment="Left" Margin="146,107,0,0" VerticalAlignment="Top" Height="18" Width="24"/>
+                    <Separator HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top" Height="7" Width="215"/>
+                    <Label Content="Piercer Revolver" HorizontalAlignment="Left" Margin="10,142,0,0" VerticalAlignment="Top" Height="26" Width="94"/>
+                    <CheckBox x:Name="revolverblue" HorizontalAlignment="Left" Margin="109,146,0,0" VerticalAlignment="Top" Height="18" Width="24"/>
+                    <Label Content="Sharpshooter Revolver" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top" Height="26" Width="129"/>
+                    <CheckBox x:Name="revolverred" HorizontalAlignment="Left" Margin="143,174,0,0" VerticalAlignment="Top" Height="18" Width="24"/>
+                    <Label Content="Marksman Revolver" HorizontalAlignment="Left" Margin="10,197,0,0" VerticalAlignment="Top" Height="26" Width="114"/>
+                    <CheckBox x:Name="revolvergreen" HorizontalAlignment="Left" Margin="129,201,0,0" VerticalAlignment="Top" Height="18" Width="24"/>
+                    <Label Content="Alt. Revolver" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Height="26" Width="76"/>
+                    <CheckBox x:Name="revolveralt" HorizontalAlignment="Left" Margin="91,0,0,0" VerticalAlignment="Center" Height="18" Width="24"/>
+                    <Label Content="Core Eject Shotgun" HorizontalAlignment="Left" Margin="9,263,0,0" VerticalAlignment="Top" Height="26" Width="112"/>
+                    <CheckBox x:Name="shotgunblue" HorizontalAlignment="Left" Margin="126,267,0,0" VerticalAlignment="Top" Height="18" Width="24"/>
+                    <Label Content="Pump Charge Shotgun" HorizontalAlignment="Left" Margin="9,291,0,0" VerticalAlignment="Top" Height="26" Width="130"/>
+                    <CheckBox x:Name="shotgungreen" HorizontalAlignment="Left" Margin="143,295,0,0" VerticalAlignment="Top" Height="18" Width="24"/>
+                    <Label Content="Attractor Nailgun" HorizontalAlignment="Left" Margin="9,328,0,0" VerticalAlignment="Top" Height="26" Width="103"/>
+                    <CheckBox x:Name="nailgunblue" HorizontalAlignment="Left" Margin="112,332,0,0" VerticalAlignment="Top" Height="18" Width="24"/>
+                    <Label Content="Overheat Nailgun" HorizontalAlignment="Left" Margin="9,356,0,0" VerticalAlignment="Top" Height="26" Width="103"/>
+                    <CheckBox x:Name="nailgungreen" HorizontalAlignment="Left" Margin="115,360,0,0" VerticalAlignment="Top" Height="18" Width="24"/>
+                    <Label Content="Alternate Nailgun" HorizontalAlignment="Left" Margin="9,383,0,0" VerticalAlignment="Top" Height="26" Width="103"/>
+                    <CheckBox x:Name="nailgunalt" HorizontalAlignment="Left" Margin="115,387,0,0" VerticalAlignment="Top" Height="18" Width="24"/>
+                    <Separator HorizontalAlignment="Left" Margin="21,225,0,0" VerticalAlignment="Top" Height="7" Width="439" RenderTransformOrigin="0.5,0.5">
+                        <Separator.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Separator.RenderTransform>
+                    </Separator>
+                    <CheckBox x:Name="railcannonblue" Content="Electric Railcannon" HorizontalAlignment="Left" Margin="255,10,0,0" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="railcannongreen" Content="Screwdriver Railcannon" HorizontalAlignment="Left" Margin="255,33,0,0" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="railcannonred" Content="Malicious Railcannon" HorizontalAlignment="Left" Margin="255,56,0,0" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="rocketblue" Content="Freezeframe Rocket Launcher" HorizontalAlignment="Left" Margin="255,91,0,0" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="rocketgreen" Content="S.R.S. Cannon Rocket Launcher" HorizontalAlignment="Left" Margin="255,114,0,0" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="armblue" Content="Feedbacker" HorizontalAlignment="Left" Margin="255,149,0,0" VerticalAlignment="Top" IsChecked="True"/>
+                    <CheckBox x:Name="armred" Content="Knuckleblaster" HorizontalAlignment="Left" Margin="255,172,0,0" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="armgreen" Content="Whiplash" HorizontalAlignment="Left" Margin="255,195,0,0" VerticalAlignment="Top"/>
+                    <Separator HorizontalAlignment="Left" Margin="255,218,0,0" VerticalAlignment="Top" Height="7" Width="215"/>
+                    <ComboBox x:Name="secmis0" HorizontalAlignment="Left" Margin="255,230,0,0" VerticalAlignment="Top" Width="120" IsSynchronizedWithCurrentItem="False" SelectedIndex="0">
+                        <ComboBoxItem Content="Undiscovered"/>
+                        <ComboBoxItem Content="Discovered"/>
+                        <ComboBoxItem Content="Finished"/>
+                    </ComboBox>
+                    <Label Content="Prelude Secret Mission" HorizontalAlignment="Left" Margin="380,230,0,0" VerticalAlignment="Top" Height="26"/>
+                    <ComboBox x:Name="secmis1" HorizontalAlignment="Left" Margin="255,261,0,0" VerticalAlignment="Top" Width="120" IsSynchronizedWithCurrentItem="False" SelectedIndex="0">
+                        <ComboBoxItem Content="Undiscovered"/>
+                        <ComboBoxItem Content="Discovered"/>
+                        <ComboBoxItem Content="Finished"/>
+                    </ComboBox>
+                    <Label Content="Limbo Secret Mission" HorizontalAlignment="Left" Margin="380,261,0,0" VerticalAlignment="Top" Height="26"/>
+                    <ComboBox x:Name="secmis2" HorizontalAlignment="Left" Margin="255,292,0,0" VerticalAlignment="Top" Width="120" IsSynchronizedWithCurrentItem="False" SelectedIndex="0">
+                        <ComboBoxItem Content="Undiscovered"/>
+                        <ComboBoxItem Content="Discovered"/>
+                        <ComboBoxItem Content="Finished"/>
+                    </ComboBox>
+                    <Label Content="Lust Secret Mission" HorizontalAlignment="Left" Margin="380,292,0,0" VerticalAlignment="Top" Height="26"/>
+                    <ComboBox x:Name="secmis3" HorizontalAlignment="Left" Margin="255,323,0,0" VerticalAlignment="Top" Width="120" IsSynchronizedWithCurrentItem="False" SelectedIndex="0">
+                        <ComboBoxItem Content="Undiscovered"/>
+                        <ComboBoxItem Content="Discovered"/>
+                        <ComboBoxItem Content="Finished"/>
+                    </ComboBox>
+                    <Label Content="Greed Secret Mission" HorizontalAlignment="Left" Margin="380,323,0,0" VerticalAlignment="Top" Height="26"/>
+                    <ComboBox x:Name="secmis4" HorizontalAlignment="Left" Margin="255,354,0,0" VerticalAlignment="Top" Width="120" IsSynchronizedWithCurrentItem="False" SelectedIndex="0">
+                        <ComboBoxItem Content="Undiscovered"/>
+                        <ComboBoxItem Content="Discovered"/>
+                        <ComboBoxItem Content="Finished"/>
+                    </ComboBox>
+                    <Label Content="Wrath Secret Mission" HorizontalAlignment="Left" Margin="380,354,0,0" VerticalAlignment="Top" Height="26"/>
+                    <Separator HorizontalAlignment="Left" Margin="300,225,0,0" VerticalAlignment="Top" Height="7" Width="440" RenderTransformOrigin="0.5,0.5">
+                        <Separator.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Separator.RenderTransform>
+                    </Separator>
+                    <CheckBox x:Name="revcustomization" Content="Revolver Customization" HorizontalAlignment="Left" Margin="533,10,0,0" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="shocustomization" Content="Shotgun Customization" HorizontalAlignment="Left" Margin="533,33,0,0" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="naicustomization" Content="Nailgun Customization" HorizontalAlignment="Left" Margin="533,56,0,0" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="raicustomization" Content="Railcannon Customization" HorizontalAlignment="Left" Margin="533,79,0,0" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="rockcustomization" Content="Rocket Launcher Customization" HorizontalAlignment="Left" Margin="533,102,0,0" VerticalAlignment="Top"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Levels">
+                <Grid Background="#FF252525" Margin="0,0,0,-7">
+                    <mah:NumericUpDown x:Name="lvl" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="126" Minimum="1" Maximum="25" ParsingNumberStyle="Integer" Value="0" ValueChanged="NumericUpDown_ValueChanged"/>
+                    <Label Content="LEVEL" HorizontalAlignment="Left" Margin="141,10,0,0" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="harmlessRank" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="47" SelectedIndex="0">
+                        <ComboBoxItem Content="-"/>
+                        <ComboBoxItem Content="D"/>
+                        <ComboBoxItem Content="C"/>
+                        <ComboBoxItem Content="B"/>
+                        <ComboBoxItem Content="A"/>
+                        <ComboBoxItem Content="S"/>
+                        <ComboBoxItem Content="P"/>
+                    </ComboBox>
+                    <ComboBox x:Name="lenientRank" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" Width="47" SelectedIndex="0">
+                        <ComboBoxItem Content="-"/>
+                        <ComboBoxItem Content="D"/>
+                        <ComboBoxItem Content="C"/>
+                        <ComboBoxItem Content="B"/>
+                        <ComboBoxItem Content="A"/>
+                        <ComboBoxItem Content="S"/>
+                        <ComboBoxItem Content="P"/>
+                    </ComboBox>
+                    <ComboBox x:Name="standardRank" HorizontalAlignment="Left" Margin="10,97,0,0" VerticalAlignment="Top" Width="47" SelectedIndex="0">
+                        <ComboBoxItem Content="-"/>
+                        <ComboBoxItem Content="D"/>
+                        <ComboBoxItem Content="C"/>
+                        <ComboBoxItem Content="B"/>
+                        <ComboBoxItem Content="A"/>
+                        <ComboBoxItem Content="S"/>
+                        <ComboBoxItem Content="P"/>
+                    </ComboBox>
+                    <ComboBox x:Name="violentRank" HorizontalAlignment="Left" Margin="10,125,0,0" VerticalAlignment="Top" Width="47" SelectedIndex="0">
+                        <ComboBoxItem Content="-"/>
+                        <ComboBoxItem Content="D"/>
+                        <ComboBoxItem Content="C"/>
+                        <ComboBoxItem Content="B"/>
+                        <ComboBoxItem Content="A"/>
+                        <ComboBoxItem Content="S"/>
+                        <ComboBoxItem Content="P"/>
+                    </ComboBox>
+                    <mah:ToggleSwitch x:Name="challengeDone" Height="27" Margin="10,182,0,0" VerticalAlignment="Top" Width="178" Content="Challenge Finished"/>
+                    <Button x:Name="saveLvl" Content="SAVE LEVEL" HorizontalAlignment="Left" Margin="10,246,0,0" VerticalAlignment="Top" Click="Button_Click_2"/>
+                    <mah:ToggleSwitch x:Name="majorAssists" Height="27" Margin="10,212,0,0" VerticalAlignment="Top" Width="178" Content="Major Assists Used"/>
+                    <Label Content="Harmless Rank" HorizontalAlignment="Left" Margin="62,41,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Lenient Rank" HorizontalAlignment="Left" Margin="62,69,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Standard Rank" HorizontalAlignment="Left" Margin="62,97,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Violent Rank" HorizontalAlignment="Left" Margin="62,124,0,0" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="sec1" Content="Secret 1" HorizontalAlignment="Left" Margin="10,159,0,0" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="sec2" Content="Secret 2" HorizontalAlignment="Left" Margin="81,159,0,0" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="sec3" Content="Secret 3" HorizontalAlignment="Left" Margin="152,159,0,0" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="sec4" Content="Secret 4" HorizontalAlignment="Left" Margin="223,159,0,0" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="sec5" Content="Secret 5" HorizontalAlignment="Left" Margin="294,159,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="nounlock" Content="LEVEL NOT UNLOCKED!" HorizontalAlignment="Center" VerticalAlignment="Center" Height="397" Width="800" Background="Black" FontSize="48" Visibility="Collapsed"/>
+                </Grid>
+            </TabItem>
+        </mah:MetroAnimatedSingleRowTabControl>
+        
+        <Button Content="Save" VerticalAlignment="Bottom" Height="30" Width="146" HorizontalAlignment="Right" Click="Button_Click_1"/>
+        <Button Content="Load different slot" HorizontalAlignment="Right" Margin="0,0,146,0" VerticalAlignment="Bottom" Height="30" Width="146" Click="Button_Click"/>
+        <Label x:Name="interactBlock" Content="SELECT SAVE" FontSize="48" Background="Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Visibility="Collapsed"/>
+    </Grid>
+</mah:MetroWindow>
