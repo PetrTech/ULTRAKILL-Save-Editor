@@ -3,7 +3,7 @@ ULTRAKILL Save Editor is an open-source utility which allows you to modify curre
 This is the first public save editor (atleast that I know of)
 
 # FAIR WARNING:
-The code might suck a lil and all that you know
+The code might suck a lil and all that you know.
 I like to warn people before looking into the source code.
 
 # Previews:
